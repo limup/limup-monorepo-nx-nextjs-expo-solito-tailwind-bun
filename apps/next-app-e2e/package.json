@@ -1,0 +1,10 @@
+{
+  "name": "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/next-app-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/next-app"
+    ]
+  }
+}
