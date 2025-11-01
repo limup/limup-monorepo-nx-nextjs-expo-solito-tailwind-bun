@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
+import '@expo/metro-runtime';
 import React, { useRef, useState } from 'react';
 import {
   SafeAreaView,
@@ -38,7 +39,7 @@ export const App = () => {
               testID="heading"
               role="heading"
             >
-              Welcome ExpoApp 👋
+              Welcome Arnaldo alou teste  👋
             </Text>
           </View>
           <View style={styles.section}>

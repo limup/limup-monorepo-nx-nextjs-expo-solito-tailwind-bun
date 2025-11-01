@@ -2,7 +2,9 @@
   "name": "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "bun nx run-many -t start,dev -p expo-app next-app --parallel=2"
+  },
   "private": true,
   "devDependencies": {
     "@eslint/compat": "^1.1.1",
@@ -32,6 +34,7 @@
     "@types/react": "~19.0.10",
     "@types/react-dom": "^19.0.0",
     "autoprefixer": "10.4.13",
+    "concurrently": "^9.1.2",
     "babel-jest": "^30.0.2",
     "babel-preset-expo": "~13.2.0",
     "eslint": "^9.8.0",
