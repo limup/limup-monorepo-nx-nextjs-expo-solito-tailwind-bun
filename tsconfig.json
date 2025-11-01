@@ -11,6 +11,15 @@
     },
     {
       "path": "./apps/expo-app"
+    },
+    {
+      "path": "./packages/features"
+    },
+    {
+      "path": "./packages/ui"
+    },
+    {
+      "path": "./packages/utils"
     }
   ]
 }
