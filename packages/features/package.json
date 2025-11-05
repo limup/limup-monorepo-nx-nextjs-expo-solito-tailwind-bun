@@ -9,13 +9,24 @@
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/source": "./src/index.ts",
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "default": "./dist/index.js"
+    },
+    "./users": {
+      "types": "./dist/lib/users/index.d.ts",
+      "import": "./dist/lib/users/index.js",
+      "default": "./dist/lib/users/index.js"
     }
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "react": "^19.0.0",
+    "react-native": "0.79.3",
+    "solito": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-native": "0.79.3"
   }
 }

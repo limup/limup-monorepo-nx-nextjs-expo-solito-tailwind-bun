@@ -6,8 +6,8 @@
     "importHelpers": true,
     "isolatedModules": true,
     "lib": ["es2022"],
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "noEmitOnError": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
@@ -16,6 +16,30 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
+    "baseUrl": ".",
+    "paths": {
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/features": [
+        "packages/features/dist"
+      ],
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/features/users": [
+        "packages/features/dist/lib/users"
+      ],
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/features/*": [
+        "packages/features/*"
+      ],
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/ui": [
+        "packages/ui/dist"
+      ],
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/ui/*": [
+        "packages/ui/*"
+      ],
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/utils": [
+        "packages/utils/dist"
+      ],
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/utils/*": [
+        "packages/utils/*"
+      ]
+    },
     "customConditions": [
       "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/source"
     ]

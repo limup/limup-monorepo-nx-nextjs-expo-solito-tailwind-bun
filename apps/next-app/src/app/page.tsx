@@ -1,9 +1,22 @@
+"use client";
+import { Link } from "solito/link";
+
 export default function Index() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.tailwind file.
-   */
+  return (
+    <main className="flex flex-col items-center justify-center h-screen gap-4">
+      <h1 className="text-3xl font-bold">Welcome to Solito + Nx + Bun</h1>
+      <Link href="/users/1">
+        <button className="bg-blue-500 text-white p-3 rounded">Go to User 1</button>
+      </Link>
+      <Link href="/users/2">
+        <button className="bg-blue-500 text-white p-3 rounded">Go to User 2</button>
+      </Link>
+    </main>
+  );
+}
+
+// Mantido para referência - remova se não precisar
+export function OldIndex() {
   return (
     <div>
       <div className="wrapper">

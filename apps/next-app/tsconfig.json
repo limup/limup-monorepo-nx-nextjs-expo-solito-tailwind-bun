@@ -8,11 +8,7 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
@@ -23,14 +19,30 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./src/*"
+      "@/*": ["./src/*"],
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/features": [
+        "../../packages/features/dist"
+      ],
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/features/users": [
+        "../../packages/features/dist/lib/users"
+      ],
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/features/*": [
+        "../../packages/features/*"
+      ],
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/ui": [
+        "../../packages/ui/src"
+      ],
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/ui/*": [
+        "../../packages/ui/*"
+      ],
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/utils": [
+        "../../packages/utils/src"
+      ],
+      "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/utils/*": [
+        "../../packages/utils/*"
       ]
     },
-    "types": [
-      "jest",
-      "node"
-    ],
+    "types": ["jest", "node"],
     "outDir": "dist",
     "rootDir": "src",
     "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo"
@@ -56,5 +68,13 @@
     "eslint.config.js",
     "eslint.config.cjs",
     "eslint.config.mjs"
+  ],
+  "references": [
+    {
+      "path": "../../packages/ui"
+    },
+    {
+      "path": "../../packages/features"
+    }
   ]
 }
