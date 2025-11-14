@@ -7,6 +7,7 @@
     "dev:expo": "bun nx start expo-app --clear",
     "dev:next": "bun nx dev next-app",
     "build": "bun nx run-many -t build -p expo-app next-app --parallel=2",
+    "build:packages": "bun nx run-many -t build -p features ui utils --parallel=3",
     "dev:reset": "bun nx reset",
     "dev:sync": "bun nx sync",
     "dev:typecheck": "bun nx typecheck",

@@ -11,6 +11,9 @@ export default function Index() {
       <Link href="/users/2">
         <button className="bg-blue-500 text-white p-3 rounded">Go to User 2</button>
       </Link>
+      <Link href="/users/3">
+        <button className="bg-blue-500 text-white p-3 rounded">Go to User 3</button>
+      </Link>
     </main>
   );
 }

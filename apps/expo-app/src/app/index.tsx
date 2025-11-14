@@ -10,6 +10,9 @@ export default function Home() {
       </Link>
       <Link href="/users/2">
         <Text className="text-blue-600 underline">Go to User 2</Text>
+      </Link> 
+      <Link href="/users/3">
+        <Text className="text-blue-600 underline">Go to User 3</Text>
       </Link>
     </View>
   );
