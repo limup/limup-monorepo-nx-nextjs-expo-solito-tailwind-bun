@@ -2,8 +2,6 @@
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { composePlugins, withNx } = require('@nx/next');
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const path = require('path');
 
 /**
  * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
@@ -22,14 +20,14 @@ const nextConfig = {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
       'react-native$': 'react-native-web',
+      'react-native-safe-area-context': require.resolve(
+        'react-native-css-interop/dist/runtime/third-party-libs/react-native-safe-area-context.js'
+      ),
     };
     return config;
   },
 };
 
-const plugins = [
-  // Add more Next.js plugins to this list if needed.
-  withNx,
-];
+const plugins = [withNx];
 
 module.exports = composePlugins(...plugins)(nextConfig);

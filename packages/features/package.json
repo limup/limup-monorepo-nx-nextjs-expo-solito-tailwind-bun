@@ -9,11 +9,13 @@
   "exports": {
     "./package.json": "./package.json",
     ".": {
+      "react-native": "./src/index.ts",
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "default": "./dist/index.js"
     },
     "./users": {
+      "react-native": "./src/lib/users/index.ts",
       "types": "./dist/lib/users/index.d.ts",
       "import": "./dist/lib/users/index.js",
       "default": "./dist/lib/users/index.js"
@@ -28,5 +30,14 @@
   "peerDependencies": {
     "react": "^19.0.0",
     "react-native": "0.79.3"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "bun run clean && bun run build:types && bun run build:js",
+    "build:types": "tsc -p tsconfig.lib.json",
+    "build:js": "babel src --out-dir dist --extensions .ts,.tsx --config-file ./babel.config.cjs --source-maps true",
+    "build:types:watch": "tsc -p tsconfig.lib.json --watch --preserveWatchOutput",
+    "build:js:watch": "babel src --out-dir dist --extensions .ts,.tsx --config-file ./babel.config.cjs --source-maps true --watch --verbose",
+    "build:watch": "concurrently \"bun run build:types:watch\" \"bun run build:js:watch\""
   }
 }

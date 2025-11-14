@@ -25,16 +25,16 @@
         "packages/features/dist/lib/users"
       ],
       "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/features/*": [
-        "packages/features/*"
+        "packages/features/dist/*"
       ],
       "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/ui": [
-        "packages/ui/dist"
+        "packages/ui/src"
       ],
       "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/ui/*": [
         "packages/ui/*"
       ],
       "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/utils": [
-        "packages/utils/dist"
+        "packages/utils/src"
       ],
       "@limup-monorepo-nx-nextjs-expo-solito-tailwind-bun/utils/*": [
         "packages/utils/*"

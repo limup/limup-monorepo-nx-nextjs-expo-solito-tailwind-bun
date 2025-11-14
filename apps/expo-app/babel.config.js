@@ -1,9 +1,9 @@
+const nativeWindBabel = require('nativewind/babel');
+
 module.exports = function (api) {
   api.cache(true);
   return {
-    presets: [
-      require.resolve('babel-preset-expo'),
-      require.resolve('nativewind/babel'),
-    ],
+    presets: [require.resolve('babel-preset-expo')],
+    plugins: [...nativeWindBabel().plugins],
   };
 };
