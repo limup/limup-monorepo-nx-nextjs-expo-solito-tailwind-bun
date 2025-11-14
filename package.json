@@ -3,7 +3,19 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "bun nx run-many -t start,dev -p expo-app next-app --parallel=2"
+    "dev": "bun nx run-many -t start,dev -p expo-app next-app --parallel=2",
+    "dev:expo": "bun nx start expo-app --clear",
+    "dev:next": "bun nx dev next-app",
+    "build": "bun nx run-many -t build -p expo-app next-app --parallel=2",
+    "dev:reset": "bun nx reset",
+    "dev:sync": "bun nx sync",
+    "dev:typecheck": "bun nx typecheck",
+    "dev:test": "bun nx test",
+    "dev:lint": "bun nx lint",
+    "dev:format": "bun nx format",
+    "dev:format:check": "bun nx format:check",
+    "dev:format:write": "bun nx format:write",
+    "dev:format:fix": "bun nx format:fix"
   },
   "private": true,
   "devDependencies": {
